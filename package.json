@@ -1,0 +1,8 @@
+{
+  "name": "wechat-moment-analysis-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cp -r dist ../public",
+    "install": "cd frontend && npm install"
+  }
+}

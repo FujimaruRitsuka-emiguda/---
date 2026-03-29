@@ -1,19 +1,6 @@
 {
+  "version": 2,
   "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "/backend/index.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/frontend/$1"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/frontend/index.html",
-      "permanent": false
-    }
+    { "source": "/api/(.*)", "destination": "/api/analyze.js" }
   ]
 }
