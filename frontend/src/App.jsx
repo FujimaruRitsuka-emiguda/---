@@ -57,7 +57,8 @@ const App = () => {
 
     try {
       console.log('Starting analysis with', images.length, 'images...');
-      const response = await axios.post('http://localhost:3001/api/analyze', formData);
+      // 这里的地址改为相对路径，这样无论部署在哪里都能通过 vercel.json 找到后端
+      const response = await axios.post('/api/analyze', formData);
       console.log('Analysis response:', response.data);
       setAnalysisResult(response.data.analysis);
     } catch (err) {
